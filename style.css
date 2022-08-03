@@ -1,28 +1,161 @@
-#videoKOH{
-	position: fixed;
-	z-index: -1;
+body {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	overflow: hidden;    
 }
 
-@media (min-aspect-ratio:16/9) {
-	#videoKOH {
-		width: 100%;
-		height: auto;
-	}
+/*BACKGROUND*/
+#background{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background-size: cover; 
 }
 
-@media (max-aspect-ratio:16/9) {
-	#videoKOH {
-		width: auto;
-		height: 100%;
-	}
+/*SOBRE - EFEITO VIDRO*/
+.sobre {
+	backdrop-filter: blur(5px);
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	margin: 400px;
+	width: 50em;
+	height: 10em;
+	padding: 5px 5px 5px 5px;
+	font-size: 22px;
+	font-family: roboto, sans-serif;
+	
+	
 }
 
-/*@media (max-width: 767px) {
-	#videoKOH {
-		display: none;
-	}
-	body {
-		background: #000000;
-	}
-}*/
+/* TOPO */
+#cabecalho{
+display: block;
+position: fixed;
+text-align: center;
+top: 0;
+left: 0;
+color: #FFFFFF;
+font-family: 'Roboto', sans-serif;		
+width: 100%;
+
+}
+
+.cabecalho ul{
+	
+	    
+}
+
+nav {
+    padding: 2em;
+	    
+}
+nav  li  {
+
+display: inline;
+margin:  0 0 0  15px; 
+
+}
+
+nav a  {
+    text-transform: uppercase;
+    color:  #ffffff; 
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: none;
+	padding: 1em;
+}
+
+nav a:hover {
+    color: #228fce;    
+}
+
+/*CONTATO*/ 
+
+.role a {
+    color: #ffffff;   
+	text-decoration: none; 
+	margin: 10px;
+	font-size: 15px;
+}
+.role a:hover {
+    color: #228fce;   
+	text-decoration: none; 
+	font-size: 16px;
+	
+}
+
+.note a {
+    color: #ffffff;   
+	text-decoration: none; 
+	margin: 10px;
+	font-size: 10px;
+}
+.note a:hover {
+    color: #0da3df;   
+	text-decoration: none; 
+	font-size: 11px;
+}
+
+.integrantes{
+	padding: 10em 20em 20em 15em;
+}
+
+.integrantes h2:hover {
+    color: #228fce;   
+	text-decoration: none; 
+	font-size: 18px;
+	
+}
+
+#highlights h2:hover {
+    color: #228fce;   
+	text-decoration: none; 
+	font-size: 18px;
+		
+}
+
+#highlights{
+display: flex;	
+justify-content: space-around;	
+}
+
+/*teste*/
+.video1,
+.video2
+.video3 {
+	width: 560px;
+	height: 315px;	
+ }
+ 
+ .video1,
+ .video2,
+ .video3 {
+	width: 560px;
+	height: 315px;
+	-webkit-transition: -webkit-transform .5s ease;
+	transition: transform .5s ease;
+ }
+ 
+ .video1:hover,
+ .video2:hover,
+ .video3:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.5);
+	box-shadow: 0 8px 16px 3px rgba(0, 217, 255, 0.6);
+		
+ }
+
+
+
+
 

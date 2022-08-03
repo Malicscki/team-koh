@@ -97,6 +97,8 @@ h2:after {
   margin: 20px;
   width: 100px;
   height: 150px;
+  padding: 1px;
+  border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0,0,0,0.8);
   transform-origin: center top;
@@ -108,6 +110,7 @@ h2:after {
 .card img {
   width: 100%;
   min-height: 100%;
+  
 }
 .cards .card figcaption,
 .news .card figcaption {
@@ -144,9 +147,10 @@ h2:after {
 .cards .card:focus,
 .card:focus,
 .cards .card:active,
-.card:active {
-  box-shadow: 0 8px 16px 3px rgba(255, 255, 255, 0.6);
-  transform: translateY(-3px) scale(1.05) rotateX(15deg);
+.card:active,
+.profilecard:hover {
+  box-shadow: 0 8px 16px 3px rgba(0, 217, 255, 0.6);
+  transform: translateY(-3px) scale(1.25) rotateX(15deg);
 }
 .cards .card:hover figcaption,
 .card:hover figcaption,
@@ -166,3 +170,4 @@ h2:after {
   top: -40%;
   opacity: 0.15;
 }
+
